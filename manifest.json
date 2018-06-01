@@ -1,14 +1,9 @@
 {
-  "Name": "3-heart Dance Partner",
-  "Author": "spacechase0",
-  "Version": {
-    "MajorVersion": 1,
-    "MinorVersion": 0,
-    "PatchVersion": 2,
-    "Build": null
-  },
-  "Description": "Makes you only need 3 hearts for a dance partner at the flower festival.",
-  "UniqueID": "ThreeHeartDancePartner",
-  "EntryDll": "ThreeHeartDancePartner.dll",
-  "UpdateKeys": [ "Nexus:500" ]
+   "Name": "3-Heart Dance Partner",
+   "Author": "spacechase0, updated by Fyn/Hawkfalcon",
+   "Version": "1.2.1-unofficial.1-fynfalcon",
+   "UpdateKeys": ["Nexus:500"],
+   "Description": "Makes you only need 3 hearts (configurable) for a dance partner at the flower festival.",
+   "UniqueID": "ThreeHeartDancePartner",
+   "EntryDll": "ThreeHeartDancePartner.dll"
 }
