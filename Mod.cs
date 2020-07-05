@@ -11,12 +11,17 @@ namespace ThreeHeartDancePartner
 {
     public class Mod : StardewModdingAPI.Mod
     {
+        internal static Mod Instance { get; private set; }
+        internal protected static ModConfig Config => ModConfig.Instance;
+
         /// <summary>The mod entry point, called after the mod is first loaded.</summary>
         /// <param name="helper">Provides simplified APIs for writing mods.</param>
         public override void Entry(IModHelper helper)
         {
             Log.Monitor = Monitor;
             helper.Events.Display.MenuChanged += onMenuChanged;
+
+            ModConfig.Load();
         }
 
         /// <summary>Raised after a game menu is opened, closed, or replaced.</summary>
@@ -43,8 +48,9 @@ namespace ThreeHeartDancePartner
                 return;
 
             // replace with accept dialog
-            // The original stuff, only the relationship point check is modified. (1000 -> 750)
-            if (!npc.HasPartnerForDance && Game1.player.getFriendshipLevelForNPC(npc.Name) >= 750)
+            // The original stuff, only the relationship point check is modified. (1000 -> custom hearts * 250)
+            if (!npc.HasPartnerForDance && 
+                Game1.player.getFriendshipLevelForNPC(npc.Name) >= Config.HeartsRequiredForDancePartner * 250)
             {
                 string s = "";
                 switch (npc.Gender)
