@@ -1,5 +1,5 @@
 # ThreeHeartDancePartner
-This is an update of spacechase0's Three Heart Dance Parter mod, with added config.
+This is an update of spacechase0's Three Heart Dance Partner mod, with added config.
 Original README text follows.
 
 This is the source code. Releases can be found at:
