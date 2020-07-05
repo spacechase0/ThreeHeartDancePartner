@@ -21,6 +21,7 @@ namespace ThreeHeartDancePartner
             Log.Monitor = Monitor;
             helper.Events.Display.MenuChanged += onMenuChanged;
 
+            Instance = this;
             ModConfig.Load();
         }
 

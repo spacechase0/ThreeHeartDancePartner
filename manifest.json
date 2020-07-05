@@ -1,7 +1,7 @@
 {
   "Name": "Any Heart Dance Partner",
   "Author": "spacechase0 and Jonqora",
-  "Version": "1.1.0-unofficial.1-Jonqora",
+  "Version": "1.1.0-unofficial.2-Jonqora",
   "Description": "Adjust the required heart level for a dance partner at the flower festival.",
   "UniqueID": "ThreeHeartDancePartner",
   "EntryDll": "ThreeHeartDancePartner.dll",
